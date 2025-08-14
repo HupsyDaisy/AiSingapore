@@ -1,0 +1,67 @@
+{"level":30,"time":"2025-08-13T11:59:16.651Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Listening on 127.0.0.1:53496"}
+(node:23432) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-13T11:59:17.226Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-13T11:59:17.430Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Adding browser to stack: chromium, version: 139.0.7258.5"}
+{"level":30,"time":"2025-08-13T11:59:17.431Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-13T11:59:17.431Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-13T11:59:17.438Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-13T11:59:17.439Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@7900068b4adc4c0778339b28e6313f63\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=a17e9771-7c89-4501-a820-1df0a59bd519\"}"}
+{"level":30,"time":"2025-08-13T11:59:17.457Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Setting default timeout for context context=6540717b-a012-46c8-ae81-fe063076e0de to 10000"}
+{"level":30,"time":"2025-08-13T11:59:17.457Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Changed active context: context=6540717b-a012-46c8-ae81-fe063076e0de"}
+{"level":30,"time":"2025-08-13T11:59:17.611Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-13T11:59:17.611Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Changed active page"}
+{"level":30,"time":"2025-08-13T11:59:19.876Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-13T11:59:19.883Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-13T11:59:19.883Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@7900068b4adc4c0778339b28e6313f63\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=6540717b-a012-46c8-ae81-fe063076e0de\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@a034bd0acadde06f7edf0a96e857fc46\"},\"pageStack\":[{\"id\":\"page=f16a6800-ca9d-4f20-bfd9-27e4afbaab4e\",\"p\":{\"_type\":\"Page\",\"_guid\":\"page@9553996a0ce351e4f071b796123b85ee\"},\"timestamp\":1755086357.611,\"pageErrors\":[],\"errorIndex\":0,\"consoleMessages\":[{\"type\":\"verbose\",\"text\":\"[DOM] Input elements should have autocomplete attributes (suggested: \\\"username\\\"): (More info: https://goo.gl/9p2vKq) %o\",\"location\":{\"url\":\"https://rpaexercise.aisingapore.org/login\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2025-08-13T11:59:19.765Z\"}],\"consoleIndex\":0,\"activeDownloads\":{}}],\"traceFile\":\"\"}],\"id\":\"browser=a17e9771-7c89-4501-a820-1df0a59bd519\"}"}
+{"level":30,"time":"2025-08-13T11:59:19.930Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-13T11:59:19.930Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Changed active page"}
+{"level":30,"time":"2025-08-13T11:59:20.041Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-13T11:59:20.046Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:59:20.046Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='outlined-search'] in page."}
+{"level":30,"time":"2025-08-13T11:59:20.128Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:59:20.132Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:59:20.133Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id=\"password\"] in page."}
+{"level":30,"time":"2025-08-13T11:59:20.190Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:59:20.194Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:59:20.194Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()=\"Login\"] in page."}
+{"level":30,"time":"2025-08-13T11:59:20.254Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:59:20.257Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-13T11:59:20.258Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()=\"Logout\"] in page."}
+{"level":30,"time":"2025-08-13T11:59:20.262Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-13T12:01:29.337Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-13T12:01:29.352Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Removed page=cb29a631-cb78-4615-8959-e0f5e53bef49 from context=6540717b-a012-46c8-ae81-fe063076e0de page stack"}
+{"level":30,"time":"2025-08-13T12:01:29.356Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Removed page=878561fd-6bd6-46b6-ac58-e2219b0118d0 from context=6540717b-a012-46c8-ae81-fe063076e0de page stack"}
+{"level":30,"time":"2025-08-13T12:01:29.655Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-13T12:01:29.673Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-13T12:01:29.673Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-13T12:01:29.686Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-13T12:01:29.686Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-13T12:01:29.981Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-13T12:01:29.981Z","pid":23432,"hostname":"AWA5CD2297ZMS","msg":"End of node method closeAllBrowsers"}

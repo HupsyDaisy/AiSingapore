@@ -1,0 +1,67 @@
+{"level":30,"time":"2025-08-13T12:07:36.220Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Listening on 127.0.0.1:53954"}
+(node:9904) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-13T12:07:36.795Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-13T12:07:37.015Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Adding browser to stack: chromium, version: 139.0.7258.5"}
+{"level":30,"time":"2025-08-13T12:07:37.016Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-13T12:07:37.015Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-13T12:07:37.024Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-13T12:07:37.024Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@0fc85ffa19da660934d98174d5509d88\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=6871afe7-ebd4-40a0-9ad0-786f5980b828\"}"}
+{"level":30,"time":"2025-08-13T12:07:37.044Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Setting default timeout for context context=cc47d3a8-1d16-41e7-9af2-b246fa8d80f5 to 10000"}
+{"level":30,"time":"2025-08-13T12:07:37.044Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Changed active context: context=cc47d3a8-1d16-41e7-9af2-b246fa8d80f5"}
+{"level":30,"time":"2025-08-13T12:07:37.222Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-13T12:07:37.222Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Changed active page"}
+{"level":30,"time":"2025-08-13T12:07:39.471Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-13T12:07:39.478Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-13T12:07:39.478Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@0fc85ffa19da660934d98174d5509d88\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=cc47d3a8-1d16-41e7-9af2-b246fa8d80f5\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@5afd8748e77450a4ccd006724f6b84eb\"},\"pageStack\":[{\"id\":\"page=fd40ab64-4303-4c57-a4b3-34de0f426f34\",\"p\":{\"_type\":\"Page\",\"_guid\":\"page@49252d1e3154752391d2eba31fb4decb\"},\"timestamp\":1755086857.222,\"pageErrors\":[],\"errorIndex\":0,\"consoleMessages\":[{\"type\":\"verbose\",\"text\":\"[DOM] Input elements should have autocomplete attributes (suggested: \\\"username\\\"): (More info: https://goo.gl/9p2vKq) %o\",\"location\":{\"url\":\"https://rpaexercise.aisingapore.org/login\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2025-08-13T12:07:39.358Z\"}],\"consoleIndex\":0,\"activeDownloads\":{}}],\"traceFile\":\"\"}],\"id\":\"browser=6871afe7-ebd4-40a0-9ad0-786f5980b828\"}"}
+{"level":30,"time":"2025-08-13T12:07:39.527Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-13T12:07:39.527Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Changed active page"}
+{"level":30,"time":"2025-08-13T12:07:39.656Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-13T12:07:39.664Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:39.664Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='outlined-search'] in page."}
+{"level":30,"time":"2025-08-13T12:07:39.757Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:39.765Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:39.765Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id=\"password\"] in page."}
+{"level":30,"time":"2025-08-13T12:07:39.844Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:39.848Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T12:07:39.848Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()=\"Login\"] in page."}
+{"level":30,"time":"2025-08-13T12:07:39.922Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T12:07:39.929Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-13T12:07:39.929Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()=\"Logout\"] in page."}
+{"level":30,"time":"2025-08-13T12:07:39.935Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-13T12:07:39.962Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T12:07:39.963Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='New Job Posting'] in page."}
+{"level":30,"time":"2025-08-13T12:07:40.047Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T12:07:40.053Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:40.053Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTitle'] in page."}
+{"level":30,"time":"2025-08-13T12:07:40.462Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:40.468Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:40.469Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //textarea[@id='jobDescription'] in page."}
+{"level":30,"time":"2025-08-13T12:07:41.471Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:41.478Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-08-13T12:07:41.478Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //select[@id='hiringDepartment'] in page."}
+{"level":30,"time":"2025-08-13T12:07:41.514Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Option entries: 6"}
+{"level":30,"time":"2025-08-13T12:07:41.515Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-08-13T12:07:41.514Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-08-13T12:07:41.519Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-08-13T12:07:41.519Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //select[@id='educationLevel'] in page."}
+{"level":30,"time":"2025-08-13T12:07:41.543Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Option entries: 3"}
+{"level":30,"time":"2025-08-13T12:07:41.543Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-08-13T12:07:41.543Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-08-13T12:07:41.547Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:41.547Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='postingStartDate'] in page."}
+{"level":30,"time":"2025-08-13T12:07:41.684Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:41.688Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:41.688Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='postingEndDate'] in page."}
+{"level":30,"time":"2025-08-13T12:07:41.820Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T12:07:41.827Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T12:07:41.827Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@value='No'] in page."}
+{"level":30,"time":"2025-08-13T12:07:41.877Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T12:07:41.885Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T12:07:41.885Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTypeFullTime'] in page."}
+{"level":30,"time":"2025-08-13T12:07:41.945Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T12:07:41.954Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T12:07:41.954Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='Submit'] in page."}
+{"level":30,"time":"2025-08-13T12:07:42.029Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-14T06:03:03.145Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Removed page=9bffa945-396c-49ff-bc28-e392cf697a91 from context=cc47d3a8-1d16-41e7-9af2-b246fa8d80f5 page stack"}
+{"level":30,"time":"2025-08-14T06:03:03.148Z","pid":9904,"hostname":"AWA5CD2297ZMS","msg":"Removed page=24912362-e35e-4155-8a7b-089aedc2cc13 from context=cc47d3a8-1d16-41e7-9af2-b246fa8d80f5 page stack"}

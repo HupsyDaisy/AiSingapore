@@ -1,0 +1,175 @@
+{"level":30,"time":"2025-08-13T11:43:42.122Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Listening on 127.0.0.1:52719"}
+(node:20840) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-13T11:43:42.717Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-13T11:43:42.922Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Adding browser to stack: chromium, version: 139.0.7258.5"}
+{"level":30,"time":"2025-08-13T11:43:42.923Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-13T11:43:42.922Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-13T11:43:42.929Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-13T11:43:42.930Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@19ae61794289cf57da251746c8459882\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=f1b5baa0-3bfa-48ce-aad0-fceca73d0ff4\"}"}
+{"level":30,"time":"2025-08-13T11:43:42.945Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Setting default timeout for context context=7bfc373d-9ab8-42cc-bac5-9b9a393dbf21 to 10000"}
+{"level":30,"time":"2025-08-13T11:43:42.945Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Changed active context: context=7bfc373d-9ab8-42cc-bac5-9b9a393dbf21"}
+{"level":30,"time":"2025-08-13T11:43:43.112Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-13T11:43:43.112Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Changed active page"}
+{"level":30,"time":"2025-08-13T11:43:45.354Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-13T11:43:45.359Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-13T11:43:45.359Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@19ae61794289cf57da251746c8459882\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=7bfc373d-9ab8-42cc-bac5-9b9a393dbf21\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@3af9b27433498f1247cd8f42f95e83fc\"},\"pageStack\":[{\"id\":\"page=70508926-f2e0-4494-bf14-80b4334f2599\",\"p\":{\"_type\":\"Page\",\"_guid\":\"page@ba0f870c5a185902571c092827e24705\"},\"timestamp\":1755085423.111,\"pageErrors\":[],\"errorIndex\":0,\"consoleMessages\":[{\"type\":\"verbose\",\"text\":\"[DOM] Input elements should have autocomplete attributes (suggested: \\\"username\\\"): (More info: https://goo.gl/9p2vKq) %o\",\"location\":{\"url\":\"https://rpaexercise.aisingapore.org/login\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2025-08-13T11:43:45.245Z\"}],\"consoleIndex\":0,\"activeDownloads\":{}}],\"traceFile\":\"\"}],\"id\":\"browser=f1b5baa0-3bfa-48ce-aad0-fceca73d0ff4\"}"}
+{"level":30,"time":"2025-08-13T11:43:45.399Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-13T11:43:45.399Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Changed active page"}
+{"level":30,"time":"2025-08-13T11:43:45.523Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-13T11:43:45.527Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:45.527Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='outlined-search'] in page."}
+{"level":30,"time":"2025-08-13T11:43:45.613Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:45.619Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:45.619Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id=\"password\"] in page."}
+{"level":30,"time":"2025-08-13T11:43:45.679Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:45.682Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:45.682Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()=\"Login\"] in page."}
+{"level":30,"time":"2025-08-13T11:43:45.743Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:45.746Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-13T11:43:45.746Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()=\"Logout\"] in page."}
+{"level":30,"time":"2025-08-13T11:43:45.752Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-13T11:43:45.760Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:45.760Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='New Job Posting'] in page."}
+{"level":30,"time":"2025-08-13T11:43:45.835Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:45.838Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:45.838Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTitle'] in page."}
+{"level":30,"time":"2025-08-13T11:43:46.107Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:46.110Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:46.110Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //textarea[@id='jobDescription'] in page."}
+{"level":30,"time":"2025-08-13T11:43:46.761Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:46.766Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:46.766Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //select[@id='hiringDepartment'] in page."}
+{"level":30,"time":"2025-08-13T11:43:46.788Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Option entries: 6"}
+{"level":30,"time":"2025-08-13T11:43:46.788Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:46.788Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-08-13T11:43:46.791Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:46.791Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //select[@id='educationLevel'] in page."}
+{"level":30,"time":"2025-08-13T11:43:46.807Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Option entries: 3"}
+{"level":30,"time":"2025-08-13T11:43:46.808Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:46.807Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-08-13T11:43:46.810Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:46.810Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='postingStartDate'] in page."}
+{"level":30,"time":"2025-08-13T11:43:46.906Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:46.909Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:46.909Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='postingEndDate'] in page."}
+{"level":30,"time":"2025-08-13T11:43:46.994Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:46.998Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:46.998Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@value='No'] in page."}
+{"level":30,"time":"2025-08-13T11:43:47.045Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:47.049Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:47.049Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTypeFullTime'] in page."}
+{"level":30,"time":"2025-08-13T11:43:47.096Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:47.101Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:47.101Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='Submit'] in page."}
+{"level":30,"time":"2025-08-13T11:43:47.163Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:47.170Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:47.170Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='New Job Posting'] in page."}
+{"level":30,"time":"2025-08-13T11:43:47.430Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:47.433Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:47.433Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTitle'] in page."}
+{"level":30,"time":"2025-08-13T11:43:47.609Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:47.611Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:47.611Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //textarea[@id='jobDescription'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.184Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:48.187Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:48.187Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //select[@id='hiringDepartment'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.203Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Option entries: 6"}
+{"level":30,"time":"2025-08-13T11:43:48.203Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:48.203Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-08-13T11:43:48.206Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:48.206Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //select[@id='educationLevel'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.220Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Option entries: 3"}
+{"level":30,"time":"2025-08-13T11:43:48.220Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:48.220Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-08-13T11:43:48.227Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:48.227Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='postingStartDate'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.313Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:48.317Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:48.317Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='postingEndDate'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.404Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:48.407Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.407Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@value='Yes'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.440Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.443Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.443Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTypeFullTime'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.493Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.497Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.497Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTypePermanent'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.542Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.545Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.545Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='Submit'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.595Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.605Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.605Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='New Job Posting'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.862Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:48.866Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:48.866Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTitle'] in page."}
+{"level":30,"time":"2025-08-13T11:43:48.939Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:48.943Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:48.943Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //textarea[@id='jobDescription'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.573Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:49.575Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:49.575Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //select[@id='hiringDepartment'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.589Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Option entries: 6"}
+{"level":30,"time":"2025-08-13T11:43:49.589Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:49.589Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-08-13T11:43:49.591Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:49.591Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //select[@id='educationLevel'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.605Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Option entries: 3"}
+{"level":30,"time":"2025-08-13T11:43:49.605Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-08-13T11:43:49.605Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-08-13T11:43:49.609Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:49.609Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='postingStartDate'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.704Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:49.707Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:49.707Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='postingEndDate'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.796Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method typeText"}
+{"level":30,"time":"2025-08-13T11:43:49.800Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:49.800Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@value='No'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.841Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:49.845Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:49.845Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTypePartTime'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.896Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:49.899Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:49.899Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //input[@id='jobTypeTemp'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.942Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:49.945Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-13T11:43:49.945Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Strict mode is enabled, find Locator with //span[normalize-space()='Submit'] in page."}
+{"level":30,"time":"2025-08-13T11:43:49.995Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method click"}
+{"level":30,"time":"2025-08-13T11:43:49.999Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-13T11:43:50.014Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Removed page=3ddbd71f-92a7-4472-8e44-f4b44527e1b7 from context=7bfc373d-9ab8-42cc-bac5-9b9a393dbf21 page stack"}
+{"level":30,"time":"2025-08-13T11:43:50.018Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Removed page=23a9abf8-317c-4802-a921-1a3c74a95eb6 from context=7bfc373d-9ab8-42cc-bac5-9b9a393dbf21 page stack"}
+{"level":30,"time":"2025-08-13T11:43:50.303Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-13T11:43:50.311Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-13T11:43:50.311Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-13T11:43:50.318Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-13T11:43:50.318Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-13T11:43:50.384Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-13T11:43:50.384Z","pid":20840,"hostname":"AWA5CD2297ZMS","msg":"End of node method closeAllBrowsers"}

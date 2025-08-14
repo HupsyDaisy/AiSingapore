@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2025-08-13T14:43:41.366586" rpa="false" schemaversion="5">
+<suite id="s1" name="Add Job" source="C:\Users\jutta\Documents\AiSingapore-RPA\Tasks\add_job.robot">
+<test id="s1-t1" name="Upload All Jobs From CSV" line="13">
+<kw name="Test Setup" owner="taskresource" type="SETUP">
+<kw name="Open AiSingapore" owner="taskresource">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-13T14:43:41.557381" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\jutta\\Documents\\AiSingapore-RPA\\Tasks\\results\\browser\\traces\\temp\\759859ff-66a9-4c1c-9fdc-cb83f52dae74"}</msg>
+<msg time="2025-08-13T14:43:41.581424" level="INFO">Starting Browser process C:\Users\jutta\Documents\AiSingapore-RPA\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52719</msg>
+<msg time="2025-08-13T14:43:42.925679" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\jutta\\Documents\\AiSingapore-RPA\\Tasks\\results\\browser\\traces\\temp\\759859ff-66a9-4c1c-9fdc-cb83f52dae74"}</msg>
+<arg>chromium</arg>
+<arg>headless=${Headless}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-13T14:43:41.556787" elapsed="1.369170"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-13T14:43:45.355925" level="INFO">Successfully initialized new page object and opened url: https://rpaexercise.aisingapore.org/login</msg>
+<msg time="2025-08-13T14:43:45.356019" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-13T14:43:42.926267" elapsed="2.429923"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:41.556007" elapsed="3.800342"/>
+</kw>
+<kw name="Login" owner="taskresource">
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-13T14:43:45.525884" level="INFO">Successfully initialized new page object and opened url: https://rpaexercise.aisingapore.org/login</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.357273" elapsed="0.168761"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:45.526642" level="INFO">Types the text 'jane007' in the given field.</msg>
+<arg>//input[@id='outlined-search']</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.526180" elapsed="0.089555"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:45.617149" level="INFO">Types the text 'TheBestHR123' in the given field.</msg>
+<arg>${ADD_PASWORD}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.616075" elapsed="0.064202"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:45.680903" level="INFO">Clicks the element '//span[normalize-space()="Login"]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.680449" elapsed="0.064375"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-13T14:43:45.753608" level="INFO">Waited for Element with selector //span[normalize-space()="Logout"] at state visible</msg>
+<arg>${LOG_OUT_VISIBLE}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.744996" elapsed="0.008751"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-08-13T14:43:45.356729" elapsed="0.397120"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:41.555682" elapsed="4.198218"/>
+</kw>
+<kw name="Read Jobs CSV" owner="CustomLibrary">
+<msg time="2025-08-13T14:43:45.754779" level="INFO">${jobs} = [{'\ufeff#': '1', 'jobTitle': 'Training and Development Specialist', 'jobDescription': 'The responsibility of this role is to come up with structured programmes to meet the learning needs of employees...</msg>
+<var>${jobs}</var>
+<arg>${CSV_PATH}</arg>
+<status status="PASS" start="2025-08-13T14:43:45.754209" elapsed="0.000601"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Add A Job From Row">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:45.755725" level="INFO">${jobTitle} = Training and Development Specialist</msg>
+<var>${jobTitle}</var>
+<arg>${row}</arg>
+<arg>jobTitle</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.755557" elapsed="0.000190"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:45.755970" level="INFO">${jobDescription} = The responsibility of this role is to come up with structured programmes to meet the learning needs of employees.</msg>
+<var>${jobDescription}</var>
+<arg>${row}</arg>
+<arg>jobDescription</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.755833" elapsed="0.000157"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:45.756193" level="INFO">${hiringDepartment} = Human Resource</msg>
+<var>${hiringDepartment}</var>
+<arg>${row}</arg>
+<arg>hiringDepartment</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.756063" elapsed="0.000148"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:45.756404" level="INFO">${educationLevel} = Diploma</msg>
+<var>${educationLevel}</var>
+<arg>${row}</arg>
+<arg>educationLevel</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.756282" elapsed="0.000142"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:45.756623" level="INFO">${postingStartDate} = 12/10/2021</msg>
+<var>${postingStartDate}</var>
+<arg>${row}</arg>
+<arg>postingStartDate</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.756492" elapsed="0.000175"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:45.756875" level="INFO">${postingEndDate} = 30/11/2021</msg>
+<var>${postingEndDate}</var>
+<arg>${row}</arg>
+<arg>postingEndDate</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.756743" elapsed="0.000151"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:45.757107" level="INFO">${remote} = No</msg>
+<var>${remote}</var>
+<arg>${row}</arg>
+<arg>remote</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.756972" elapsed="0.000153"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:45.757310" level="INFO">${jobType} = Full-time</msg>
+<var>${jobType}</var>
+<arg>${row}</arg>
+<arg>jobType</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.757190" elapsed="0.000138"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2025-08-13T14:43:45.757680" level="INFO">${remote} = No</msg>
+<var>${remote}</var>
+<arg>${remote}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.757539" elapsed="0.000160"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2025-08-13T14:43:45.757905" level="INFO">${jobType} = Full-time</msg>
+<var>${jobType}</var>
+<arg>${jobType}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.757772" elapsed="0.000151"/>
+</kw>
+<kw name="Add A Job">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:45.758955" level="INFO">Clicks the element '//span[normalize-space()='New Job Posting']'.</msg>
+<arg>//span[normalize-space()='New Job Posting']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.758625" elapsed="0.078252"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:45.837486" level="INFO">Types the text 'Training and Development Specialist' in the given field.</msg>
+<arg>//input[@id='jobTitle']</arg>
+<arg>${jobTitle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:45.837043" elapsed="0.272290"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:46.109963" level="INFO">Types the text 'The responsibility of this role is to come up with structured programmes to meet the learning needs of employees.' in the given field.</msg>
+<arg>//textarea[@id='jobDescription']</arg>
+<arg>${jobDescription}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:46.109505" elapsed="0.653426"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-08-13T14:43:46.763861" level="INFO">Selects the option(s) Human Resource by attribute SelectAttribute.value from element //select[@id='hiringDepartment'].</msg>
+<arg>//select[@id='hiringDepartment']</arg>
+<arg>value</arg>
+<arg>${hiringDepartment}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:46.763183" elapsed="0.026779"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-08-13T14:43:46.790621" level="INFO">Selects the option(s) Diploma by attribute SelectAttribute.value from element //select[@id='educationLevel'].</msg>
+<arg>//select[@id='educationLevel']</arg>
+<arg>value</arg>
+<arg>${educationLevel}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:46.790131" elapsed="0.018942"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:46.809692" level="INFO">Types the text '12/10/2021' in the given field.</msg>
+<arg>//input[@id='postingStartDate']</arg>
+<arg>${postingStartDate}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:46.809240" elapsed="0.098506"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:46.908572" level="INFO">Types the text '30/11/2021' in the given field.</msg>
+<arg>//input[@id='postingEndDate']</arg>
+<arg>${postingEndDate}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:46.907971" elapsed="0.087730"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;Yes&quot; in &quot;${remote}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@value='Yes']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:46.996158" elapsed="0.000064"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:46.995848" elapsed="0.000533"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:46.995816" elapsed="0.000602"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;No&quot; in &quot;${remote}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:46.996971" level="INFO">Clicks the element '//input[@value='No']'.</msg>
+<arg>//input[@value='No']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:46.996657" elapsed="0.050175"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:46.996472" elapsed="0.050443"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:46.996458" elapsed="0.050502"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Full-time&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:47.047888" level="INFO">Clicks the element '//input[@id='jobTypeFullTime']'.</msg>
+<arg>//input[@id='jobTypeFullTime']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.047324" elapsed="0.050697"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:47.047022" elapsed="0.051123"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:47.047004" elapsed="0.051207"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Part-time&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@id='jobTypePartTime']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:47.098714" elapsed="0.000110"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:47.098300" elapsed="0.000649"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:47.098274" elapsed="0.000731"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Temp&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@id='jobTypeTemp']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:47.099364" elapsed="0.000062"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:47.099058" elapsed="0.000413"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:47.099043" elapsed="0.000460"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Permanent&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@id='jobTypePermanent']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:47.099724" elapsed="0.000041"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:47.099551" elapsed="0.000249"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:47.099539" elapsed="0.000287"/>
+</if>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:47.100282" level="INFO">Clicks the element '//span[normalize-space()='Submit']'.</msg>
+<arg>//span[normalize-space()='Submit']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.099883" elapsed="0.064883"/>
+</kw>
+<arg>${jobTitle}</arg>
+<arg>${jobDescription}</arg>
+<arg>${hiringDepartment}</arg>
+<arg>${educationLevel}</arg>
+<arg>${postingStartDate}</arg>
+<arg>${postingEndDate}</arg>
+<arg>${remote}</arg>
+<arg>${jobType}</arg>
+<status status="PASS" start="2025-08-13T14:43:45.758210" elapsed="1.406735"/>
+</kw>
+<arg>${row}</arg>
+<status status="PASS" start="2025-08-13T14:43:45.755331" elapsed="1.410046"/>
+</kw>
+<var name="${row}">{'\ufeff#': '1', 'jobTitle': 'Training and Development Specialist', 'jobDescription': 'The responsibility of this role is to come up with structured programmes to meet the learning needs of employees....</var>
+<status status="PASS" start="2025-08-13T14:43:45.755161" elapsed="1.410376"/>
+</iter>
+<iter>
+<kw name="Add A Job From Row">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:47.166685" level="INFO">${jobTitle} = Senior Software Engineer</msg>
+<var>${jobTitle}</var>
+<arg>${row}</arg>
+<arg>jobTitle</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.166468" elapsed="0.000242"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:47.166976" level="INFO">${jobDescription} = This role participates in the full software development life cycle of internal enterprise applications.</msg>
+<var>${jobDescription}</var>
+<arg>${row}</arg>
+<arg>jobDescription</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.166808" elapsed="0.000189"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:47.167222" level="INFO">${hiringDepartment} = Engineering</msg>
+<var>${hiringDepartment}</var>
+<arg>${row}</arg>
+<arg>hiringDepartment</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.167073" elapsed="0.000168"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:47.167445" level="INFO">${educationLevel} = Degree</msg>
+<var>${educationLevel}</var>
+<arg>${row}</arg>
+<arg>educationLevel</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.167315" elapsed="0.000147"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:47.167650" level="INFO">${postingStartDate} = 15/10/2021</msg>
+<var>${postingStartDate}</var>
+<arg>${row}</arg>
+<arg>postingStartDate</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.167531" elapsed="0.000137"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:47.167866" level="INFO">${postingEndDate} = 14/11/2021</msg>
+<var>${postingEndDate}</var>
+<arg>${row}</arg>
+<arg>postingEndDate</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.167739" elapsed="0.000144"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:47.168073" level="INFO">${remote} = Yes</msg>
+<var>${remote}</var>
+<arg>${row}</arg>
+<arg>remote</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.167952" elapsed="0.000138"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:47.168270" level="INFO">${jobType} = Full-time/Permanent</msg>
+<var>${jobType}</var>
+<arg>${row}</arg>
+<arg>jobType</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.168155" elapsed="0.000132"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2025-08-13T14:43:47.168467" level="INFO">${remote} = Yes</msg>
+<var>${remote}</var>
+<arg>${remote}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.168354" elapsed="0.000129"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2025-08-13T14:43:47.168655" level="INFO">${jobType} = Full-time/Permanent</msg>
+<var>${jobType}</var>
+<arg>${jobType}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.168545" elapsed="0.000127"/>
+</kw>
+<kw name="Add A Job">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:47.169523" level="INFO">Clicks the element '//span[normalize-space()='New Job Posting']'.</msg>
+<arg>//span[normalize-space()='New Job Posting']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.169210" elapsed="0.262181"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:47.432061" level="INFO">Types the text 'Senior Software Engineer' in the given field.</msg>
+<arg>//input[@id='jobTitle']</arg>
+<arg>${jobTitle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.431561" elapsed="0.179031"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:47.611266" level="INFO">Types the text 'This role participates in the full software development life cycle of internal enterprise applications.' in the given field.</msg>
+<arg>//textarea[@id='jobDescription']</arg>
+<arg>${jobDescription}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:47.610754" elapsed="0.574863"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-08-13T14:43:48.186727" level="INFO">Selects the option(s) Engineering by attribute SelectAttribute.value from element //select[@id='hiringDepartment'].</msg>
+<arg>//select[@id='hiringDepartment']</arg>
+<arg>value</arg>
+<arg>${hiringDepartment}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.185942" elapsed="0.018827"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-08-13T14:43:48.205719" level="INFO">Selects the option(s) Degree by attribute SelectAttribute.value from element //select[@id='educationLevel'].</msg>
+<arg>//select[@id='educationLevel']</arg>
+<arg>value</arg>
+<arg>${educationLevel}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.205019" elapsed="0.019449"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:48.225951" level="INFO">Types the text '15/10/2021' in the given field.</msg>
+<arg>//input[@id='postingStartDate']</arg>
+<arg>${postingStartDate}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.224757" elapsed="0.089761"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:48.315703" level="INFO">Types the text '14/11/2021' in the given field.</msg>
+<arg>//input[@id='postingEndDate']</arg>
+<arg>${postingEndDate}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.314804" elapsed="0.090853"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;Yes&quot; in &quot;${remote}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:48.406899" level="INFO">Clicks the element '//input[@value='Yes']'.</msg>
+<arg>//input[@value='Yes']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.406475" elapsed="0.034801"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:48.405909" elapsed="0.035482"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:48.405836" elapsed="0.035612"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;No&quot; in &quot;${remote}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@value='No']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:48.441951" elapsed="0.000082"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:48.441590" elapsed="0.000504"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:48.441565" elapsed="0.000572"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Full-time&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:48.442896" level="INFO">Clicks the element '//input[@id='jobTypeFullTime']'.</msg>
+<arg>//input[@id='jobTypeFullTime']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.442414" elapsed="0.052397"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:48.442192" elapsed="0.052703"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:48.442177" elapsed="0.052758"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Part-time&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@id='jobTypePartTime']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:48.495285" elapsed="0.000063"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:48.494994" elapsed="0.000396"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:48.494975" elapsed="0.000442"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Temp&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@id='jobTypeTemp']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:48.495624" elapsed="0.000040"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:48.495458" elapsed="0.000240"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:48.495447" elapsed="0.000275"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Permanent&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:48.496204" level="INFO">Clicks the element '//input[@id='jobTypePermanent']'.</msg>
+<arg>//input[@id='jobTypePermanent']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.495890" elapsed="0.048194"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:48.495756" elapsed="0.048443"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:48.495746" elapsed="0.048513"/>
+</if>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:48.544932" level="INFO">Clicks the element '//span[normalize-space()='Submit']'.</msg>
+<arg>//span[normalize-space()='Submit']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.544396" elapsed="0.051742"/>
+</kw>
+<arg>${jobTitle}</arg>
+<arg>${jobDescription}</arg>
+<arg>${hiringDepartment}</arg>
+<arg>${educationLevel}</arg>
+<arg>${postingStartDate}</arg>
+<arg>${postingEndDate}</arg>
+<arg>${remote}</arg>
+<arg>${jobType}</arg>
+<status status="PASS" start="2025-08-13T14:43:47.168872" elapsed="1.427596"/>
+</kw>
+<arg>${row}</arg>
+<status status="PASS" start="2025-08-13T14:43:47.166126" elapsed="1.430481"/>
+</kw>
+<var name="${row}">{'\ufeff#': '2', 'jobTitle': 'Senior Software Engineer', 'jobDescription': 'This role participates in the full software development life cycle of internal enterprise applications.', 'hiringDepartment'...</var>
+<status status="PASS" start="2025-08-13T14:43:47.165842" elapsed="1.430843"/>
+</iter>
+<iter>
+<kw name="Add A Job From Row">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:48.598289" level="INFO">${jobTitle} = Accountant</msg>
+<var>${jobTitle}</var>
+<arg>${row}</arg>
+<arg>jobTitle</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.597837" elapsed="0.000512"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:48.598807" level="INFO">${jobDescription} = The responsibility of this role is to provide the full spectrum of accounting support to the Head of Finance.</msg>
+<var>${jobDescription}</var>
+<arg>${row}</arg>
+<arg>jobDescription</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.598510" elapsed="0.000333"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:48.599412" level="INFO">${hiringDepartment} = Finance</msg>
+<var>${hiringDepartment}</var>
+<arg>${row}</arg>
+<arg>hiringDepartment</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.598991" elapsed="0.000476"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:48.600025" level="INFO">${educationLevel} = Degree</msg>
+<var>${educationLevel}</var>
+<arg>${row}</arg>
+<arg>educationLevel</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.599693" elapsed="0.000368"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:48.600570" level="INFO">${postingStartDate} = 24/11/2021</msg>
+<var>${postingStartDate}</var>
+<arg>${row}</arg>
+<arg>postingStartDate</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.600217" elapsed="0.000392"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:48.601054" level="INFO">${postingEndDate} = 23/12/2021</msg>
+<var>${postingEndDate}</var>
+<arg>${row}</arg>
+<arg>postingEndDate</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.600758" elapsed="0.000334"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:48.601535" level="INFO">${remote} = No</msg>
+<var>${remote}</var>
+<arg>${row}</arg>
+<arg>remote</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.601235" elapsed="0.000337"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-08-13T14:43:48.601962" level="INFO">${jobType} = Part-time/Temp</msg>
+<var>${jobType}</var>
+<arg>${row}</arg>
+<arg>jobType</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.601709" elapsed="0.000288"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2025-08-13T14:43:48.602404" level="INFO">${remote} = No</msg>
+<var>${remote}</var>
+<arg>${remote}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.602134" elapsed="0.000310"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2025-08-13T14:43:48.602803" level="INFO">${jobType} = Part-time/Temp</msg>
+<var>${jobType}</var>
+<arg>${jobType}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.602565" elapsed="0.000269"/>
+</kw>
+<kw name="Add A Job">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:48.604494" level="INFO">Clicks the element '//span[normalize-space()='New Job Posting']'.</msg>
+<arg>//span[normalize-space()='New Job Posting']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.603880" elapsed="0.259478"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:48.864623" level="INFO">Types the text 'Accountant' in the given field.</msg>
+<arg>//input[@id='jobTitle']</arg>
+<arg>${jobTitle}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.863790" elapsed="0.077607"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:48.942426" level="INFO">Types the text 'The responsibility of this role is to provide the full spectrum of accounting support to the Head of Finance.' in the given field.</msg>
+<arg>//textarea[@id='jobDescription']</arg>
+<arg>${jobDescription}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:48.941778" elapsed="0.632385"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-08-13T14:43:49.574816" level="INFO">Selects the option(s) Finance by attribute SelectAttribute.value from element //select[@id='hiringDepartment'].</msg>
+<arg>//select[@id='hiringDepartment']</arg>
+<arg>value</arg>
+<arg>${hiringDepartment}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.574337" elapsed="0.015985"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-08-13T14:43:49.591178" level="INFO">Selects the option(s) Degree by attribute SelectAttribute.value from element //select[@id='educationLevel'].</msg>
+<arg>//select[@id='educationLevel']</arg>
+<arg>value</arg>
+<arg>${educationLevel}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.590568" elapsed="0.016690"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:49.608149" level="INFO">Types the text '24/11/2021' in the given field.</msg>
+<arg>//input[@id='postingStartDate']</arg>
+<arg>${postingStartDate}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.607486" elapsed="0.098193"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-08-13T14:43:49.706716" level="INFO">Types the text '23/12/2021' in the given field.</msg>
+<arg>//input[@id='postingEndDate']</arg>
+<arg>${postingEndDate}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.705912" elapsed="0.091554"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;Yes&quot; in &quot;${remote}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@value='Yes']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:49.798175" elapsed="0.000241"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:49.797641" elapsed="0.000932"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:49.797609" elapsed="0.001035"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;No&quot; in &quot;${remote}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:49.799654" level="INFO">Clicks the element '//input[@value='No']'.</msg>
+<arg>//input[@value='No']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.799116" elapsed="0.044073"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:49.798731" elapsed="0.044607"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:49.798707" elapsed="0.044689"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Full-time&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@id='jobTypeFullTime']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:49.843858" elapsed="0.000060"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:49.843513" elapsed="0.000445"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:49.843474" elapsed="0.000512"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Part-time&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:49.844663" level="INFO">Clicks the element '//input[@id='jobTypePartTime']'.</msg>
+<arg>//input[@id='jobTypePartTime']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.844337" elapsed="0.052949"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:49.844110" elapsed="0.053324"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:49.844090" elapsed="0.053413"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Temp&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:49.898890" level="INFO">Clicks the element '//input[@id='jobTypeTemp']'.</msg>
+<arg>//input[@id='jobTypeTemp']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.898175" elapsed="0.045746"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:49.897615" elapsed="0.046387"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:49.897583" elapsed="0.046459"/>
+</if>
+<if>
+<branch type="IF" condition="&quot;Permanent&quot; in &quot;${jobType}&quot;">
+<kw name="Click" owner="Browser">
+<arg>//input[@id='jobTypePermanent']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-13T14:43:49.944399" elapsed="0.000074"/>
+</kw>
+<status status="NOT RUN" start="2025-08-13T14:43:49.944100" elapsed="0.000416"/>
+</branch>
+<status status="PASS" start="2025-08-13T14:43:49.944083" elapsed="0.000462"/>
+</if>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-13T14:43:49.944924" level="INFO">Clicks the element '//span[normalize-space()='Submit']'.</msg>
+<arg>//span[normalize-space()='Submit']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.944605" elapsed="0.051941"/>
+</kw>
+<arg>${jobTitle}</arg>
+<arg>${jobDescription}</arg>
+<arg>${hiringDepartment}</arg>
+<arg>${educationLevel}</arg>
+<arg>${postingStartDate}</arg>
+<arg>${postingEndDate}</arg>
+<arg>${remote}</arg>
+<arg>${jobType}</arg>
+<status status="PASS" start="2025-08-13T14:43:48.603196" elapsed="1.393511"/>
+</kw>
+<arg>${row}</arg>
+<status status="PASS" start="2025-08-13T14:43:48.597261" elapsed="1.399550"/>
+</kw>
+<var name="${row}">{'\ufeff#': '3', 'jobTitle': 'Accountant', 'jobDescription': 'The responsibility of this role is to provide the full spectrum of accounting support to the Head of Finance.', 'hiringDepartment': 'Finan...</var>
+<status status="PASS" start="2025-08-13T14:43:48.596892" elapsed="1.399972"/>
+</iter>
+<var>${row}</var>
+<value>@{jobs}</value>
+<status status="PASS" start="2025-08-13T14:43:45.754954" elapsed="4.241981"/>
+</for>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-08-13T14:43:50.304847" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-13T14:43:49.997359" elapsed="0.307745"/>
+</kw>
+<status status="PASS" start="2025-08-13T14:43:41.554825" elapsed="8.750615"/>
+</test>
+<status status="PASS" start="2025-08-13T14:43:41.367785" elapsed="8.946284"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Add Job" id="s1" pass="1" fail="0" skip="0">Add Job</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
